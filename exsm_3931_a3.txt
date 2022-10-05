@@ -1,7 +1,25 @@
 
 # Hungry Customer
 
-
+customers = {customer1.HasEnoughChange = true, customer2.HasEnoughChange = false}
+For each customer in customers {
+	customer views snack selection
+	customer chooses a snack
+	customer checks price of desired snack
+ 		If (customer.HasEnoughChange = false) then
+			No Snack Purchased
+		Else then
+			Put money in slot
+			Type in code of desired snack
+			Remove snack from vending tray
+	customer checks for change
+		If there is change
+			Customer picks up change before eating snack
+		Else then
+			Customer is free to eat snack right away
+}
+Vending machine available for next customer
+	
 
 
 
