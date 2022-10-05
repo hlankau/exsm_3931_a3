@@ -7,7 +7,7 @@ For each customer in customers {
 	customer chooses a snack
 	customer checks price of desired snack
  		If (customer.HasEnoughChange = false) then
-			No Snack Purchased
+			No snack purchased
 		Else then
 			Put money in slot
 			Type in code of desired snack
@@ -25,3 +25,37 @@ Vending machine available for next customer
 
 
 # Machine Owner
+
+Check Stock in Vending Machines
+
+machine owner = owner
+vending machine = machine
+
+owner confirms list of vending machines
+owner decide which machine to start with
+For each machine, owner drives to the machine location {
+	owner checks machine stock through display window
+		If restocking is not needed
+			owner drives to next machine on the list
+		Else then
+			owner unlocks the machine
+			owner selects a snack tray to restock
+			owner adds new stock to tray
+			owner replaces the tray
+	owner checks if there are other trays that need to be restocked
+		If there are more trays
+			owner repeats stocking proccess until all trays are full
+		Else then
+			owner collects extra money from the machine
+			owner restocks change vending drawers
+	owner locks up the vending machine
+owner checks list to see if there are more machines to check
+	If the machines are not all checked
+		owner drives to the next machine
+	Else then
+		ownder can drive back to office
+}
+Vending machine restocking is complete until next time
+	
+
+
